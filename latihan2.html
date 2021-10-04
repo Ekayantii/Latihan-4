@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="text 1" id="text1">
+    <input type="text" name="text 2" id="text2">
+    <button onclick="penjumlahan()">+</button>
+    <button onclick="pengurangan()">-</button>
+    <button onclick="perkalian()">x</button>
+    <button onclick="pembagian()">/</button>
+    <script>
+        var angka1 = document.getElementById("text1").value;
+        var angka2 = document.getElementById("text2").value;
+        function penjumlahan(){
+            var angka1 = parseInt(document.getElementById("text1").value);
+            var angka2 = parseInt(document.getElementById("text2").value);
+            var jumlah = angka1 + angka2
+            alert(jumlah)
+        }
+
+        function pengurangan(){
+            var angka1 = parseInt(document.getElementById("text1").value);
+            var angka2 = parseInt(document.getElementById("text2").value);
+            var jumlah = angka1 - angka2
+            alert(kurang)
+        }
+
+        function perkalian(){
+            var angka1 = parseInt(document.getElementById("text1").value);
+            var angka2 = parseInt(document.getElementById("text2").value);
+            var jumlah = angka1 * angka2
+            alert(kali)
+        }
+
+        function pembagian(){
+            var angka1 = parseInt(document.getElementById("text1").value);
+            var angka2 = parseInt(document.getElementById("text2").value);
+            var jumlah = angka1 / angka2
+            alert(bagi)
+        }
+    </script>
+</body>
+</html>
